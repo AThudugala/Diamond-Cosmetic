@@ -28,7 +28,8 @@ const ProductList = () => {
                     key={product.product_id}
                     name={product.product_name}
                     image={product.img_url}
-                    description={product.product_description} />
+                    description={product.product_description}
+                    id={product.product_id} />
             )) : <div>Loading</div>}
         </div>
     );

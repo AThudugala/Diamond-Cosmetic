@@ -1,5 +1,6 @@
 import React from "react";
 import './ProductCard.css';
+import { Link, Navigate } from "react-router-dom";
 
 const ProductCard = (props) => {
     return (
@@ -11,6 +12,9 @@ const ProductCard = (props) => {
                 alt="pic"
             />
             <p>{props.description}</p>
+            <div className="view">
+                <Link className="button" to={`product/${props.id}`}>View</Link>
+            </div>
         </div>
     );
 };

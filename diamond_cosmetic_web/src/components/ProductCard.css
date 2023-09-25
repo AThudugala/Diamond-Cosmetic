@@ -1,24 +1,64 @@
 .column {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .pic {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1em;
-    color: #666;
-  }
-  
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.pic {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+.view {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 10px;
+}
+
+
+/* CSS */
+.view .button {
+background-color: #b76394;
+border-radius: 8px;
+border-style: none;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 500;
+height: 40px;
+line-height: 20px;
+list-style: none;
+margin: 0;
+outline: none;
+padding: 10px 16px;
+position: relative;
+text-align: center;
+text-decoration: none;
+transition: color 100ms;
+vertical-align: baseline;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.view .button:hover,
+.view .button:focus {
+background-color: #F082AC;
+}
