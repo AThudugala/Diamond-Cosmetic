@@ -20,7 +20,7 @@ const ProductDetails = () => {
                 <ProductCard
                     key={product.product_id}
                     name={product.product_name}
-                    image={product.image}
+                    image={product.img_url}
                     description={product.product_description}
                     category={product.product_category}
                     directions={product.directions}

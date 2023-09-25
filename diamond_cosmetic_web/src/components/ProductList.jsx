@@ -26,7 +26,7 @@ const ProductList = () => {
                 <ProductCard
                     key={product.product_id}
                     name={product.product_name}
-                    image={product.image}
+                    image={product.img_url}
                     description={product.product_description} />
             )) : <div>Loading</div>}
         </div>
