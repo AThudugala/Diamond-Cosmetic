@@ -16,9 +16,6 @@ const Navbar = () => {
           <Link className="link" to={"/"}>
             <span>Home</span>
           </Link>
-          {/* <li>
-            <a href="product/{id}">Products</a>
-          </li> */}
         </ul>
       </nav>
     </div>

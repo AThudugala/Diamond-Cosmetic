@@ -11,12 +11,21 @@ This project involves developing a Proof of Concept (POC) for Diamond Cosmetics 
 
 To run the API, ensure you have JDK 19 installed. Then, execute the following commands:
 
+```bash
+
 cd api
 ./mvnw spring-boot:run
+
+```
 
 # Running the Web Application:
 
 To run the web application, execute the following commands:
 
+```bash
 cd diamond_cosmetic_web
+
+npm install
 npm run dev
+
+```
