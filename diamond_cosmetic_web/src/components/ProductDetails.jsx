@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../api/Product';
+import './ProductDetails.css';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -34,19 +35,6 @@ const ProductDetails = () => {
         <p>Price: {product.price}</p>
         <p>In Stock: {product.in_stock}</p>
       </div>
-
-      {/* {products ? products.map(product => (
-
-                <ProductCard
-                    key={product.product_id}
-                    name={product.product_name}
-                    image={product.img_url}
-                    description={product.product_description}
-                    category={product.product_category}
-                    directions={product.directions}
-                    price={product.price}
-                    inStock={product.in_stock} />
-            )) : <div>Loading</div>} */}
     </div>
   );
 };
