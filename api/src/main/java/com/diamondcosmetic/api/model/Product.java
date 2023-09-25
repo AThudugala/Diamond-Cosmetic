@@ -23,6 +23,8 @@ public class Product {
     private float price;
     @Column(name = "in_stock")
     private int in_stock;
+    @Column(name = "img_url")
+    private String img_url;
 
     public String getProduct_id() {
         return product_id;
@@ -42,6 +44,14 @@ public class Product {
 
     public String getProduct_category() {
         return product_category;
+    }
+
+    public String getImg_url() {
+        return img_url;
+    }
+
+    public void setImg_url(String img_url) {
+        this.img_url = img_url;
     }
 
     public void setProduct_category(String product_category) {

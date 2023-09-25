@@ -24,10 +24,23 @@ public class ProductController {
 
         return productService.save(product);
     }
+    @PutMapping("/{id}")
+    public ResponseEntity<Product> updateProduct(@PathVariable String id,
+                                                 @RequestBody Product product){
+        if(!productService.existsById(id)){
+            return ResponseEntity.notFound().build();
+        }
+        product.setProduct_id(id);
+        Product updateProduct = productService.update(product);
+        return ResponseEntity.ok(updateProduct);
+    }
+
+
     @GetMapping
     public List<Product> listProducts() {
         return productService.findAll();
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable("id") String id){
         Product product = productService.findById(id);
@@ -37,5 +50,14 @@ public class ProductController {
         else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable String id){
+        if(!productService.existsById(id)){
+            return ResponseEntity.notFound().build();
+        }
+        productService.delete(id);
+        return ResponseEntity.ok().build();
     }
 }
