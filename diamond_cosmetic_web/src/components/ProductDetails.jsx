@@ -12,7 +12,7 @@ const ProductDetails = () => {
       setProduct(data);
     });
   }, [id]);
-  console.log(id, product);
+ 
 
   if (!product) {
     return <div>Loading...</div>;

@@ -18,7 +18,7 @@ const ProductList = () => {
         }
     }, [])
 
-    console.log(products);
+    
 
     return (
         <div className="product-list">
