@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { getAllProducts } from "../api/Product";
+import './ProductList.css';
 
 const ProductList = () => {
 
@@ -20,7 +21,7 @@ const ProductList = () => {
     console.log(products);
 
     return (
-        <div>
+        <div className="product-list">
             {products ? products.map(product => (
 
                 <ProductCard

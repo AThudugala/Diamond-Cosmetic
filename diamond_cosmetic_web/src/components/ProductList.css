@@ -1,0 +1,13 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 0 0 30%; /* Each product card takes up 30% of the container */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+  

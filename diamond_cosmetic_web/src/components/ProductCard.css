@@ -1,0 +1,24 @@
+.column {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .pic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #666;
+  }
+  

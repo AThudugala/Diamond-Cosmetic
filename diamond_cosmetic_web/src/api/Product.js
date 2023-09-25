@@ -8,7 +8,7 @@ const getAllProducts = () =>{
 };
 
 const getProductById = (id) => {
-    return fetch('${apiUrl}/${id}')
+    return fetch(`${apiUrl}/${id}`)
         .then(response => response.json())
         .catch(error => console.error('Error fetching product by id: ', error));
 
